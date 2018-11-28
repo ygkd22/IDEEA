@@ -1,0 +1,405 @@
+<div class="container">
+  <div class="card">
+    <div class='card-header d-inline-block'>
+      <span class="float-left">
+        <div style="font-size: 24px; padding-left:0px"><b> Vendor Detail</b></div>
+      </span>
+      <span class="float-right btn-space">
+          <button id="downloadResume" (click)="downloadResume()" class="btn btn-primary btn-space btn-md custom">
+              Download White Paper
+          </button>
+        <button id="saveCandidateButton" (click)="saveCandidate()" class="btn btn-primary btn-space btn-md custom d-none">
+          Save Vendor
+        </button>
+        <button id="editCandidateButton" (click)="makeFormActive()" class="btn btn-primary btn-space btn-md custom">
+          Edit Vendor
+        </button>
+      </span>
+    </div>
+    <div class="card-body" style="margin-bottom:20px;">
+      <!-- <h1 class="text-center">Please Submit your Scorecard</h1> -->
+      <fieldset disabled="disabled" id="entireForm">
+        <form action="">
+          <div class="form-group col-6">
+            <label for="usr"><b>Vendor Name:</b></label>
+            <input type="text" class="form-control" id="usr" name="username">
+          </div>
+
+          <div class="form-group row col-12">
+            <div class="col-6">
+              <label for="usr"><b>Capability Title:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="col-6">
+              <label for="usr"><b>Submission Date:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+          </div>
+          <div class="form-group row col-12">
+            <div class="col-6">
+              <label for="usr"><b>Duns#:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="col-6">
+              <label for="usr"><b>CAGE Code:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-2">
+              <label for="usr"><b>Technical POC:</b> </label>
+            </div>
+            <div class="col-4">
+              <label for="usr"><b> Name:</b></label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="col-6">
+              <label for="usr"><b>Phone:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="offset-md-2 col-4">
+              <label for="usr"><b>Email:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-2">
+              <label for="usr"><b>Administrative POC:</b> </label>
+            </div>
+            <div class="col-4">
+              <label for="usr"><b>Name:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="col-6">
+              <label for="usr"><b>Phone:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="offset-md-2 col-4">
+              <label for="usr"><b>Email:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+          </div>
+
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-2">
+              <label for="usr"><b>Mailing Address:</b> </label>
+            </div>
+            <div class="col-4">
+              <label for="usr"><b>Street:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="col-6">
+              <label for="usr"><b>State:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="offset-md-2 col-4">
+              <label for="usr"><b>City:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class=" col-6">
+              <label for="usr"><b>Zip:</b> </label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Organization Designation:</b></label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Large Business
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Small Business
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Sm. Disadvantaged Biz
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Woman Owned
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">SDVOSB
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">HUBZone
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Academic Institution
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">HBCU
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">FFRDC
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">National Lab
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Non-Profit
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Other
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 1:</b>: Have you ever done business with DIA?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">No
+                </label>
+              </div>
+            </div>
+            <div class="col-2">
+              <label for="usr"><b>If Yes, Please note how recently</b></label>
+            </div>
+            <div class="col-3">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">0 - 1 years
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">1 - 5 years
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Over 5 years
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 2:</b>: If No, do you have relevant past performance in another USG organization?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">No
+                </label>
+              </div>
+            </div>
+            <div class="col-2">
+              <label for="usr"><b>Please describe your relevant past performance:</b></label>
+            </div>
+            <div class="col-3">
+              <textarea name="" id="" cols="" rows="2" class="form-control"></textarea>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 3:</b>: Does your company have a current Facility Clearance issued by the USG?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">No
+                </label>
+              </div>
+            </div>
+            <div class="col-2">
+              <label for="usr"><b>If Yes, who currently holds your FCL: </b></label>
+            </div>
+            <div class="col-3">
+              <textarea name="" id="" cols="" rows="2" class="form-control"></textarea>
+            </div>
+            <div class="offset-md-7 col-2">
+              <label for="usr"><b>If No, has your company ever held an FCL? Please describe: </b></label>
+            </div>
+            <div class="col-3">
+              <textarea name="" id="" cols="" rows="2" class="form-control"></textarea>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 4:</b>:What is the nature of your solution offering to DIA?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Services
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Software
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Data
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Other
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group">
+            <div class="col-10">
+              <label for="usr"> Please provide a brief synopsis regarding your offering, including relevance to the DIA mission
+                (3-4 paragraphs maximum):</label>
+            </div>
+            <div class="col-12">
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 5:</b>:What does your solution provide to DEEA?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">New Technology
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">New Capability
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Continuous Service Improvement
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group">
+            <div class="col-10">
+              <label for="usr"> Please provide a brief synopsis of how your selection above applies to the DEEA contract
+                (150 words or less):</label>
+            </div>
+            <div class="col-12">
+              <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group row col-12">
+            <div class="col-3">
+              <label for="usr"><b>Question 6:</b>:Does your solution align to the DEEA Governing Documents?</label>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">DEEA Scope
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">DIA CIO Strategic Vision
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">DIA Information Technology Roadmap
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11">
+          <div class="form-group">
+            <div class="col-10">
+              <label for="usr">Please provide a brief synopsis of how your solution supports the above (150 words or less):</label>
+            </div>
+            <div class="col-12">
+              <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Upload a White Paper</div>
+            <div class='card-body'>
+              <div class="form-group row">
+                <div class="custom-file col-12">
+                  <input type="file" id="file">
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <!-- <div class="row">
+            <div class="col-md-6 mx-auto d-flex justify-content-center">
+              <mdb-checkbox [default]="true">Agree to our terms of service</mdb-checkbox>
+            </div>
+          </div> -->
+          <!-- <div class="text-center">
+            <button mdbBtn color="info" block="true" class="my-4" type="submit">Submit</button>
+          </div>
+          <hr> -->
+          <!-- Terms of service -->
+          <!-- <p class="text-center">By clicking <em>Submit</em> you agree to our
+            <a href="" target="_blank">terms of service</a> and
+            <a href="" target="_blank">terms of service</a>. </p> -->
+        </form>
+      </fieldset>
+      <div class="card-footer" style="border:none;">
+          <button routerLink="/admin" class="btn btn-primary btn-space btn-md custom">
+              Back
+          </button>
+      </div>
+    </div>
+  </div>
+</div>

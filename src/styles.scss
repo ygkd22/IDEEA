@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+* html, body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
 body {
     padding-top: 100px !important;
+}
+html, body {
+    margin: 0;
+    height: 100%;
 }
